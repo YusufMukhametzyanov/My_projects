@@ -4,35 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Turbologo</title>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="header-top">
-        <img src="img/logo.svg" alt="Логотип" class="logo">
-        <span class="header-top-address">
+    <div class="container container-header">
+      <div class="header-top flex">
+        <a href="index.html"><img src="img/logo.svg" alt="Логотип Turbologo" class="logo header-logo"></a>
+        <span class="legal-address header-top-address">
           Гельсингфорсская ул., 4&nbsp;корпус 1, Санкт-Петербург, 194044
         </span>
-        <button class="header-top-enter">Вход</button>
-        <img src="img/telegram.svg" alt="Иконка телеграм" class="header-top-messenger-telegram">
-        <img src="img/whatsapp.svg" alt="Иконка ватсап" class="header-top-messenger-whatsapp">
-        <a href="tel:+78129049157" class="header-top-phone">+7 (812) 904-91-57</a>
+        <button class="btn-reset header-top-enter">Вход</button>
+        <div class="messengers flex">
+          <a href="https://web.telegram.org/k/" target="_blank">
+            <img src="img/telegram.svg" alt="Иконка телеграм" class="messenger header-top-messenger-telegram">
+          </a>
+          <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank">
+            <img src="img/whatsapp.svg" alt="Иконка ватсап" class="messenger header-top-messenger-whatsapp">
+          </a>
+        </div>
+        <a href="tel:+78129049157" class="phone-link header-top-phone">+7 (812) 904-91-57</a>
         <img src="img/basket.svg" alt="" class="header-top-basket">
       </div>
       <nav class="header-navigation">
-        <ul class="header-navigation-list">
-          <li class="header-navigation-item">О&nbsp;компании</li>
-          <li class="header-navigation-item">Каталог</li>
-          <li class="header-navigation-item">Услуги</li>
-          <li class="header-navigation-item">Оплата&nbsp;/ Доставка</li>
-          <li class="header-navigation-item">Гарантии</li>
-          <li class="header-navigation-item">Опыт</li>
-          <li class="header-navigation-item">Новости</li>
-          <li class="header-navigation-item">Контакты</li>
+        <ul class="list-reset header-navigation-list flex">
+          <li class="header-navigation-item"><a href="#">О&nbsp;компании</a></li>
+          <li class="header-navigation-item"><a href="#">Каталог</a></li>
+          <li class="header-navigation-item"><a href="#">Услуги</a></li>
+          <li class="header-navigation-item"><a href="#">Оплата&nbsp;/ Доставка</a></li>
+          <li class="header-navigation-item"><a href="#">Гарантии</a></li>
+          <li class="header-navigation-item"><a href="#">Опыт</a></li>
+          <li class="header-navigation-item"><a href="#">Новости</a></li>
+          <li class="header-navigation-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -50,11 +57,11 @@
             <a href="#" class="main-link">ИБП CyberPower BU600E</a>
           </div>
         </nav>
-        <form class="main-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <form class="main-form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <div class="section-main-left-block">
             <h3 class="main-left-block-title">Категория</h3>
             <div class="main-category">
-              <ul class="main-category-list">
+              <ul class="list-reset main-category-list">
                 <li class="main-category-item">
                   <input type="checkbox" class="main-input-checkbox" name="Интерактивные ИБП" id="Интерактивные ИБП">
                   <label for="Интерактивные ИБП" class="main-label">Интерактивные ИБП</label>
@@ -108,54 +115,53 @@
             </div>
             <h3 class="main-left-block-title">Производитель</h3>
             <div class="main-manufacturer">
-              <ul class="main-manufacturer-list">
+              <ul class="list-reset main-manufacturer-list">
                 <li class="main-manufacturer-item">
                   <input type="checkbox" class="main-input-checkbox" name="Мониторинг и управление_"
                     id="Мониторинг и управление_">
-                  <label for="Интерактивные ИБП" class="main-label">Мониторинг и&nbsp;управление</label>
+                  <label for="Мониторинг и управление_" class="main-label">Мониторинг и&nbsp;управление</label>
                 </li>
                 <li class="main-manufacturer-item">
                   <input type="checkbox" class="main-input-checkbox" name="ИБП для систем отопления_"
                     id="ИБП для систем отопления_">
-                  <label for="SMART и онлайн ИБП" class="main-label">ИБП для систем отопления</label>
+                  <label for="ИБП для систем отопления_" class="main-label">ИБП для систем отопления</label>
                 </li>
                 <li class="main-manufacturer-item">
                   <input type="checkbox" class="main-input-checkbox" name="Сетевые фильтры_" id="Сетевые фильтры_">
-                  <label for="Трехфазные системы" class="main-label">Сетевые фильтры</label>
+                  <label for="Сетевые фильтры_" class="main-label">Сетевые фильтры</label>
                 </li>
                 <li class="main-manufacturer-item">
                   <input type="checkbox" class="main-input-checkbox" name="Стабилизатор напряжения_"
                     id="Стабилизатор напряжения_">
-                  <label for="Распределители питания" class="main-label">Стабилизатор напряжения</label>
+                  <label for="Стабилизатор напряжения_" class="main-label">Стабилизатор напряжения</label>
                 </li>
                 <li class="main-manufacturer-item">
                   <input type="checkbox" class="main-input-checkbox" name="Батареи" id="Батареи_">
                   <label for="Батареи_" class="main-label">Батареи</label>
                 </li>
               </ul>
-
-
-
-
-
             </div>
           </div>
           <div class="section-main-right-block">
             <h2 class="main-right-block-title">ИБП CyberPower BU600E</h2>
-            <div class="main-right-block-item">
+            <div class="main-right-block-item flex">
               <div class="main-right-block-img">
                 <img src="img/cyber-power.png" alt="Картинка бесперебойника питания" class="img-product">
-                <span class="img-product-stock-bestseller">Хит</span>
-                <span class="img-product-stock-new">Новинка</span>
-                <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
-                  class="img-product-small-left">
-                <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
-                  class="img-product-small-average">
-                <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
-                  class="img-product-small-right">
+                <div class="img-product-discount flex">
+                  <span class="bestseller-new img-product-stock-bestseller">Хит</span>
+                  <span class="bestseller-new img-product-stock-new">Новинка</span>
+                </div>
+                <div class="img-product-small flex">
+                  <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
+                    class="img-product-small-left">
+                  <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
+                    class="img-product-small-average">
+                  <img src="img/cyber-power-small.png" alt="Картинка бесперебойника питания в миниатюре"
+                    class="img-product-small-right">
+                </div>
               </div>
               <div class="main-right-block-description">
-                <span class="article-product">Артикул: 3434е3о</span>
+                <span class="article-product">Артикул: <span>3434е3о</span></span>
                 <div class="description-product-item">
                   <span class="product-definition-block-descriprion">Watts</span>
                   <span class="product-value-block-descriprion">360</span>
@@ -174,10 +180,10 @@
                 </div>
                 <div class="product-item-price-block">
                   <div class="product-item-discount-percent">-20%</div>
-                  <div class="product-item-price">
+                  <div class="product-item-price flex">
                     <span class="product-item-price-final">23&nbsp;000&nbsp;р.</span>
                     <span class="product-item-discount-currency">23&nbsp;000&nbsp;р.</span>
-                    <div class="product-quantity">
+                    <div class="product-quantity flex">
                       <img src="img/product-quantity-plus.svg" alt="Кнопка изменения количества товара"
                         class="product-quantity-plus">
                       <span class="product-quantity-item">1</span>
@@ -187,16 +193,41 @@
                   </div>
                 </div>
                 <div class="buttons-order-product">
-                  <button class="btn button-in-basket">В&nbsp;корзину</button>
-                  <button class="btn button-quickly-order">Быстрый заказ</button>
+                  <button class="btn-reset btn button-in-basket">В&nbsp;корзину</button>
+                  <button class="btn-reset btn button-quickly-order">Быстрый заказ</button>
                 </div>
               </div>
               <div class="main-right-block-specifications-documentation">
                 <div class="specification-documentation-buttons">
-                  <button class="btn-specification">Характеристики</button>
-                  <button class="documentation">Документация</button>
+                  <button class="btn-reset btn-specification-documentation specification"
+                    type="button">Характеристики</button>
+                  <button class="btn-reset btn-specification-documentation documentation"
+                    type="button">Документация</button>
                 </div>
-                <ul class="specification-documentation-downloads-list">
+                <div class="specification-block">
+                  <div class="specification-items">
+                    <span class="specification-left">Производитель</span>
+                    <span class="specification-right">CyberPower
+                    </span>
+                  </div>
+                  <div class="specification-items">
+                    <span class="specification-left">Страна производства</span>
+                    <span class="specification-right">Тайвань</span>
+                  </div>
+                  <div class="specification-items">
+                    <span class="specification-left">Мощность выход</span>
+                    <span class="specification-right">340&nbsp;W</span>
+                  </div>
+                  <div class="specification-items">
+                    <span class="specification-left">Напряжение вход/выход</span>
+                    <span class="specification-right">220&nbsp;V</span>
+                  </div>
+                  <div class="specification-items">
+                    <span class="specification-left">Количество фаз вход/выход</span>
+                    <span class="specification-right">3</span>
+                  </div>
+                </div>
+                <ul class="list-reset specification-documentation-downloads-list">
                   <li class="specification-documentation-downloads-item-pdf">
                     <a class="documentation-download-item-link" href="downloads/ibp-cyberpower-bu600e_instruction.pdf"
                       target="_blank">Документ.pdf</a>
@@ -213,20 +244,64 @@
       </div>
     </section>
     <section class="section-useful-link">
-      <div class="container">
-        <h2 class="useful-link-title"></h2>
+      <div class="container useful-link-container flex">
+        <h2 class="useful-link-title">Полезная&nbsp;рассылка</h2>
         <div class="useful-link-content">
-          <h4 class="useful-link-title-mail"></h4>
-          <form action="" class="useful-link-form">
-            <div class="useful-link-input-button"><input type="text" class="input-useful-link"><button
-                class="btn button-useful-link"></button></div>
-            <label for="" class="label-useful-link-checkbox"><input type="text"
-                class="input-checkbox-useful-link"></label>
+          <form class="useful-link-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <legend class="useful-link-title-mail">Почта</legend>
+            <div class="useful-link-input-button">
+              <input type="text" class="input-useful-link" placeholder="E-mail...." name="E-mail">
+              <button class="btn-reset btn button-useful-link" type="submit">Отправить</button>
+            </div>
+            <input id="input-checkbox-useful-link" type="checkbox" class="input-checkbox-useful-link">
+            <label for="input-checkbox-useful-link" class="label-useful-link-checkbox">
+              Подтверждаю свое согласие на&nbsp;обработку своих персональных данных
+              в&nbsp;соответствии с&nbsp;Политикой конфиденциальности
+            </label>
           </form>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-container flex">
+      <div class="footer-block flex">
+        <a href="#top"><img src="img/logo.svg" alt="Логотип Turbologo" class="logo footer-logo"></a>
+        <div class="messengers flex">
+          <a href="https://web.telegram.org/k/" target="_blank">
+            <img src="img/telegram.svg" alt="Иконка телеграм" class="messenger footer-messenger-telegram">
+          </a>
+          <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank">
+            <img src="img/whatsapp.svg" alt="Иконка ватсап" class="messenger footer-messenger-whatsapp">
+          </a>
+        </div>
+        <a href="#" class="footer-block-links footer-block-link-all-rights">2021&nbsp;&copy; Все права защищены</a>
+      </div>
+      <div class="footer-block flex">
+        <a href="#" class="footer-block-link">Доставка&nbsp;/ Оплата</a>
+        <a href="#" class="footer-block-link">Каталог</a>
+        <a href="#" class="footer-block-link">Политика&nbsp;обработки персональных&nbsp;данных</a>
+      </div>
+      <div class="footer-block flex">
+        <a href="#" class="footer-block-link">О&nbsp;компании</a>
+        <a href="#" class="footer-block-link">Услуги</a>
+        <a href="#" class="footer-block-link">Гарантии</a>
+        <a href="#" class="footer-block-link">Опыт</a>
+      </div>
+      <div class="footer-block flex">
+        <a href="#" class="footer-block-link">Новости</a>
+        <a href="#" class="footer-block-link">Контакты</a>
+      </div>
+      <div class="footer-block flex">
+        <a href="tel:+78129049157" class="phone-link footer-block-phone">+7 (812) 904-91-57</a>
+        <span class="legal-address footer-block-address">
+          Гельсингфорсская&nbsp;ул.,&nbsp;4 корпус 1, Санкт-Петербург, 194044
+        </span>
+        <a href="mailto:HJYolv@woevg.com" class="footer-block-mail">HJYolv@woevg.com</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
